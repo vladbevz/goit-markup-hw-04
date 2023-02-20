@@ -308,13 +308,17 @@ img {
   height: 40px;
 }
 .social-link {
-  background-color: var(--pressed-state);
+  background-color: var(--primary-brand);
   width: 100%;
   height: 100%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--pressed-state);
 }
 .social-icon {
   width: 16px;
@@ -357,22 +361,33 @@ img {
   width: 100%;
   height: 100%;
   border: 1px solid var(--subtle-text);
+
   border-radius: 4px;
-  fill: var(--subtle-text);
+}
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid var(--pressed-state);
+  fill: var(--pressed-state);
 }
 .customers-icon {
   width: 102px;
   height: 56px;
 }
+.customers-icon:hover {
+}
 .footer {
   background-color: var(--dark);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.footer-container {
+  max-width: 1158px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
-  gap: 120px;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .bottom-container {
   width: 264px;
@@ -430,6 +445,10 @@ img {
   align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: #31d0aa;
 }
 .footer-icon {
   width: 24px;
