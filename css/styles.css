@@ -367,16 +367,17 @@ img {
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
   color: var(--subtle-text);
-  fill: currentColor;
 }
 .customers-link:hover,
 .customers-link:focus {
   border: 1px solid var(--pressed-state);
   fill: var(--pressed-state);
+  color: var(--pressed-state);
 }
 .customers-icon {
   width: 102px;
   height: 56px;
+  fill: currentColor;
 }
 
 .footer {
@@ -449,14 +450,17 @@ img {
   align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  color: var(--light);
 }
 .footer-link:hover,
 .footer-link:focus {
   background-color: #31d0aa;
+  color: var(--light);
 }
 .footer-icon {
   width: 24px;
   height: 24px;
+  fill: currentColor;
 }
 
 .main {
